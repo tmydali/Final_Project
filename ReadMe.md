@@ -41,6 +41,9 @@
 ---
 ## 專案二
 >[name=李翊倫]
+>最後更新：2018/07/02
+>把XY座標公式更正為正確版
+>修正點只會出現在警局東北方的錯誤
 ### 專案主軸：
 根據台南市警局的轄區來劃出地圖的分布
 並列出交通事故資料。
@@ -109,12 +112,10 @@
 
 使用Python 2.7.14 寫了一個小程式
 能把資料拆成很多項
-![](https://i.imgur.com/F7IY3Me.png)
-![](https://i.imgur.com/YMop92e.png)
-![](https://i.imgur.com/DvaDyKq.png)
-
 並且每一筆資料的經度、緯度都不太一樣
-![](https://i.imgur.com/lrhWrre.png)
+![](https://i.imgur.com/NwrZg6Y.png)
+![](https://i.imgur.com/0HjkP8E.png)
+![](https://i.imgur.com/XRA73IN.png)
 以Excel開起來的樣子
 
 
@@ -146,6 +147,12 @@ XY座標為：
 因此能把「轄區事件/轄區面積」的資料視覺化
 
 
+>2018/07/02更新：
+分局的座標+sqrt(轄區面積)*(-1~1的浮點數亂數)*0.0035
+修正點只會出現在警局東北方的錯誤
+![](https://i.imgur.com/E2O2IX7.jpg)
+![](https://i.imgur.com/Gz7VFMy.jpg)
+![](https://i.imgur.com/AbWjv5c.jpg)
 
 ---
 ---
